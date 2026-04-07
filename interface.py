@@ -1,5 +1,6 @@
 import os
-from DeliveryEnv import DeliveryEnv
+from env import DeliveryEnv
+from agent import Agent
 from grader import grade
 
 # Required ENV variables
