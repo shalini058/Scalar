@@ -1,19 +1,23 @@
-# Delivery Route Optimization Environment
+# 🚚 Delivery Route Optimization Environment
 
-## Description
-This environment simulates delivery route decisions where an agent selects the best route based on time and traffic.
+## 📌 Overview
+This project implements an AI-compatible environment using the OpenEnv specification.  
+The environment simulates a real-world delivery system where an agent selects optimal routes based on time and traffic conditions.
 
-## Actions
-- 0: Route A
-- 1: Route B
-- 2: Route C
+---
 
-## Observations
-- time: delivery time
-- traffic: traffic level
+## 🎯 Objective
+The goal is to minimize delivery time and traffic impact by choosing the best route, maximizing the reward.
 
-## Reward
-Reward = 1 / (time + traffic)
+---
 
-## Run
-python main.py
+## 🧠 Environment Design
+
+### State
+The state contains:
+- `time`: Estimated delivery time
+- `traffic`: Traffic level
+
+Example:
+```json
+{"time": 5, "traffic": 3}
