@@ -1,16 +1,14 @@
 name: delivery-env
 description: Delivery route optimization environment
 
-actions:
-  type: discrete
-  size: 3
+tasks:
+- easy
+- medium
+- hard
 
-observation:
-  type: dict
-  fields:
-    time: int
-    traffic: int
+actions:
+type: discrete
+size:4
 
 reward:
-  type: float
-  range: [0, 1]
+range:[0.0, 1.0]
