@@ -1,14 +1,15 @@
 from env import DeliveryEnv
 from agent import Agent
 
-env = DeliveryEnv()
+env = DeliveryEnv("easy")
 agent = Agent()
 
 state = env.reset()
 total_reward = 0
 
 while True:
-    action = agent.choose_action(state)
+    action = agent.choose_action(env.routes)
+    
     state, reward, done, _ = env.step(action)
 
     total_reward += reward
